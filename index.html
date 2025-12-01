@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scale Henderson with AI chatbots and automated lead systems. Sell your services automatically with intelligent chatbots, auto-booking, and CRM lead routing.">
+    <meta name="keywords" content="AI chatbots, lead generation, automation, chatbot sales, CRM integration">
+    <meta name="author" content="Scale Henderson">
+    <meta property="og:title" content="Scale Henderson With AI Chatbots and Automated Lead Systems">
+    <meta property="og:description" content="Chatbots that sell your services automatically">
+    <meta property="og:type" content="website">
+    <title>Scale Henderson With AI Chatbots and Automated Lead Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #5B4BFF;
+            --secondary-color: #EEF0FF;
+            --accent-color: #00E5A8;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary-color);
+        }
+        
+        .bg-accent {
+            background-color: var(--accent-color);
+        }
+        
+        .text-primary {
+            color: var(--primary-color);
+        }
+        
+        .text-accent {
+            color: var(--accent-color);
+        }
+        
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7B68FF 100%);
+        }
+        
+        .gradient-dark {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white smooth-scroll">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-white">Scale Henderson</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="hidden md:block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
+                Book Demo
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-8 py-6 flex flex-col gap-4">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">About</a>
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 text-center mt-4">
+                    Book Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 md:py-40 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+                            Scale Henderson With AI Chatbots and Automated Lead Systems
+                        </h1>
+                        <p class="text-xl text-gray-400 leading-relaxed">
+                            Chatbots that sell your services automatically. Transform your business with intelligent automation that works 24/7 to capture, qualify, and convert leads while you focus on delivering exceptional service.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-lg font-semibold">AI-Powered Chat Integration</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-lg font-semibold">Automated Booking System</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-lg font-semibold">Smart CRM Lead Routing</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-center hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
+                            Schedule Your Demo
+                        </a>
+                        <a href="#features" class="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-center hover:bg-primary hover:text-white transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div>
+                        <div class="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 h-full flex items-center justify-center">
+                            <div class="text-center space-y-4">
+                                <div class="w-20 h-20 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Grow Your Business</h3>
+                                <p class="text-gray-400">Automated sales, zero manual work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-800/50 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                    Powerful Features Built for Growth
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Everything you need to automate your sales process and scale your business with intelligent AI-powered solutions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1: AI Chat -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI Chat Intelligence</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Advanced Claude-powered conversational AI that understands customer intent, answers complex questions, and qualifies leads in real-time. Never miss a potential customer again with 24/7 intelligent responses.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Auto-Booking -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Automated Booking</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Seamlessly integrate with your calendar and scheduling system. Customers book appointments directly through the chat, eliminating back-and-forth emails and reducing no-shows with automated reminders.
+                    </p>
+                </div>
+
+                <!-- Feature 3: CRM Integration -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Smart Lead Routing</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Intelligent CRM integration that automatically routes qualified leads to the right team member based on expertise, availability, and lead quality. Maximize conversion rates with proper lead distribution.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Real-time Analytics -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Real-time Analytics</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Comprehensive dashboards showing conversation metrics, lead quality scores, booking conversion rates, and ROI tracking. Make data-driven decisions to optimize your sales funnel continuously.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Multi-channel Deployment -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Multi-channel Deployment</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Deploy your chatbot across website, WhatsApp, Facebook Messenger, Instagram, and email. Meet your customers where they are and capture leads across all communication channels effortlessly.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Custom Training -->
+                <div class="group bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 cursor-pointer hover-lift">
+                    <div class="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17.25c0 5.25 4.5 10 10 10s10-4.75 10-10c0-6.252-4.5-10.997-10-10.997z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Custom AI Training</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Train the AI with your specific business knowledge, pricing, services, and FAQs. The chatbot learns your unique value proposition and communicates your brand voice authentically to every customer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                    Transformative Business Benefits
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Experience measurable improvements across every aspect of your sales and customer service operations
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+                <!-- Benefit 1: More Clients -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292m0 0H8.646a4 4 0 010-5.292m3.354-5.292a4 4 0 110 5.292m0 0H8.646a4 4 0 010-5.292m3.354-5.292a4 4 0 110 5.292m0 0H8.646a4 4 0 010-5.292M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">More Clients</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Capture every lead with 24/7 availability. Your chatbot never sleeps, never takes a break, and never misses a potential customer. Increase your lead volume by up to 300% while maintaining quality through intelligent qualification.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Less Work -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Less Work</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Eliminate repetitive tasks like answering common questions, scheduling appointments, and data entry. Your team can focus on high-value activities like closing deals and building relationships instead of administrative work.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Faster Growth -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Faster Growth</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Scale your business without scaling your team. Process more leads, close more deals, and grow your revenue exponentially. Achieve in months what would take years of traditional hiring and training.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4: Better Conversions -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Better Conversions</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Qualify leads instantly with intelligent scoring. Provide immediate answers to objections. Schedule appointments at the moment of interest. Every optimization compounds to significantly increase your conversion rate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 5: 24/7 Availability -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">24/7 Availability</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Never miss a customer inquiry regardless of time zone or business hours. Your chatbot responds instantly to every message, capturing leads at 3 AM just as effectively as during peak business hours.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 6: Cost Savings -->
+                <div class="flex gap-6 md:gap-8 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="text-2xl font-bold">Significant Cost Savings</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Reduce customer service costs by up to 70% while improving response quality. One AI chatbot replaces multiple team members and operates at a fraction of the cost with superior availability and consistency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="py-20 md:py-32 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative max-w-7xl mx-auto px-8 md:px-16 text-center space-y-8">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Join forward-thinking businesses already using AI chatbots to automate their sales process and scale without limits. Schedule a demo today and see how much you can grow.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 inline-block">
+                    Book Your Free Demo
+                </a>
+                <a href="mailto:dandowneyseo@gmail.com" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 inline-block">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gray-800/50 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                    Loved by Business Leaders
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    See how leading companies have transformed their sales process and achieved remarkable growth
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "This chatbot increased our lead volume by 250% in the first month. The auto-booking feature alone saved our team 15 hours per week."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Sarah Johnson</p>
+                        <p class="text-sm text-gray-400">CEO, Digital Solutions Inc</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "The CRM integration is seamless. Our sales team now focuses on closing deals instead of data entry. ROI was immediate."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Michael Chen</p>
+                        <p class="text-sm text-gray-400">Sales Director, Growth Ventures</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Best investment we made this year. The chatbot answers 80% of customer questions automatically. Our conversion rate improved by 45%."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Emily Rodriguez</p>
+                        <p class="text-sm text-gray-400">Founder, Marketing Agency Pro</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 hover-lift">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Exceeded all our expectations. Customer satisfaction increased and we reduced response time from hours to seconds. Highly recommended!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">David Thompson</p>
+                        <p class="text-sm text-gray-400">Operations Manager, Tech Consulting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                    About Scale Henderson
+                </h2>
+            </div>
+
+            <div class="space-y-8 text-lg leading-relaxed text-gray-300">
+                <p>
+                    Scale Henderson was founded with a simple mission: to democratize access to advanced AI technology for businesses of all sizes. We recognized that most companies struggle with lead generation and customer service because they lack the resources to implement sophisticated automation systems. Our founding team brought together expertise in artificial intelligence, business automation, and enterprise sales to create a solution that could level the playing field and empower entrepreneurs and established businesses alike to compete with larger corporations.
+                </p>
+
+                <p>
+                    Today, we're committed to delivering transformative technology that doesn't just automate tasks, but fundamentally reimagines how businesses interact with their customers. We believe that every business deserves access to cutting-edge AI chatbots, intelligent lead routing, and comprehensive analytics. Our core values center on innovation, reliability, and customer success. We're not just building software; we're building partnerships with our clients, supporting their growth every step of the way, and continuously evolving our platform to meet the emerging needs of modern businesses in an increasingly digital world.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-12 border-t border-gray-700">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">500+</div>
+                    <p class="text-gray-400">Active Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent mb-2">2M+</div>
+                    <p class="text-gray-400">Conversations Processed</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">$50M+</div>
+                    <p class="text-gray-400">Revenue Generated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 pb-12 border-b border-gray-800">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-lg font-bold text-white">Scale Henderson</span>
+                    </div>
+                    <p class="text-gray-400">Transform your business with AI chatbots and automated lead systems.</p>
+                </div>
+
+                <!-- Product -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="hover:text-white transition-colors duration-300">Book Demo</a></li>
+                        <li><a href="mailto:dandowneyseo@gmail.com" class="hover:text-white transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Scale Henderson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle (if FAQ section exists)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
